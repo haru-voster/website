@@ -767,9 +767,11 @@ header:before {
  */
 footer {
   padding: 25px 30px;
-  background: url("../img/footer-bg.jpg");
+  background: url("../img/lenovo.jpg");
   background-size: cover;
   background-attachment: fixed;
+  
+ 
 }
 footer .footer-title {
   font-size: 18px;

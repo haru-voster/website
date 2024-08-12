@@ -130,3 +130,20 @@ function sendWhatsAppMessage()
   var whatsappLink = "https://api.whatsapp.com/send?phone=" + formattedPhoneNumber;
   window.open(whatsappLink);
 }
+
+//laptops/computers/repauir
+const texts = ["COMPUTERS", "LAPTOPS", "REPAIRS"];
+let index = 0;
+
+function rotateText() {
+    const element = document.getElementById("rotating-text");
+    element.style.opacity = 0;  // Fade out the current text
+    
+    setTimeout(() => {
+        element.textContent = texts[index];
+        element.style.opacity = 1;  // Fade in the new text
+        index = (index + 1) % texts.length;  // Update index
+    }, 500);  // Adjust the delay to match the fade-out time
+}
+
+setInterval(rotateText, 2000);  
