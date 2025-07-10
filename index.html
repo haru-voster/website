@@ -34,7 +34,7 @@
     <script src="js/modernizr.js"></script>
     
   </head>
-  <body id="vigo_body">
+  <body id="body">
     <!--[if lt IE 8]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -125,7 +125,7 @@
                     <div class="header-meta header-meta-ph bg-white media d-flex align-items-center d-inline-flex">
                         <i class="fa fa-phone" aria-hidden="true"></i>
                         <div class="media-body d-none d-xl-block">
-                            <a href="" class="logo" onclick="sendWhatsAppMessage()" color="green"><i class="fa fa-whatsapp"></i>0708466793</a>
+                            <a href="" class="logo" onclick="sendWhatsAppMessage()" color="green"><i class="fa fa-whatsapp"></i>+254708466793</a>
                         </div>
                     </div>
                     <div class="header-meta header-meta-search-btn media d-flex align-items-center d-none d-lg-block d-inline-flex">
@@ -177,19 +177,19 @@
                             <div class="my-2 my-lg-0">
                                 <nav class="navbar">
                                     <i class="nav-item">
-                                        <a class="fa fa-home " href="#vigo_body">HOME</a>
+                                        <a class="fa fa-home " href="#body">HOME</a>
                                     </i>
                                     <i class="nav-item">
                                         <a class="fa fa-user " href="#about-section">ABOUT</a>
                                     </i>
                                     <i class="nav-item">
-                                        <a class="fa fa-server " href="#features">SERVICES</a>
+                                        <a class="fa fa-server " href="#services">SERVICES</a>
                                     </i>
                                     <i class="nav-item">
-                                        <a class="fa fa-store " href="#vigo-price">STORE</a>
+                                        <a class="fa fa-star " href="#stock">STORE</a>
                                     </i>
                                     <i class="nav-item">
-                                        <a class="fa fa-computer " href="#ingredients">COMPUTERS</a>
+                                        <a class="fa fa-ticket " href="#computer">COMPUTERS</a>
                                     </i>
                                    
                                     <i class="nav-item">
@@ -200,7 +200,7 @@
                         </div>
                     </div>
                     <div class="p-2 d-lg-flex align-items-lg-center">
-                        <a href="https://wa.me/0708466793/" target="_blank" class="btn ral btn-outline-primary vigo-btn hvr-shutter-out-horizontal bg-green border-transparent white focus-none">ORDER</a>
+                        <a href="https://wa.me/+254708466793/" target="_blank" class="btn ral btn-outline-primary vigo-btn hvr-shutter-out-horizontal bg-green border-transparent white focus-none">ORDER</a>
                     </div>
                 </div>
             </nav>     
@@ -213,7 +213,7 @@
     <section class="main-slider">
         <div id="main-slider" class="owl-carousel owl-theme">
             <div class="item">
-                <img src="img/lap2.jpeg" class="img-fluid" alt="Vigo Slider Image" style="background-size: repeat">
+                <img src="img/lap2.jpg" class="img-fluid" alt="Vigo Slider Image" style="background-size: repeat">
                 <div class="slider-text-box">
                     <div class="container custom-container">
                         <div class="row">
@@ -229,6 +229,18 @@
                                     </p>
                                     <a href="#" target="_blank" class="btn ral btn-outline-primary vigo-btn hvr-shutter-out-horizontal bg-green border-transparent white focus-none text-uppercase">Product Details</a>
                                 </div>
+                                <script>
+                                    const phrases = ["COMPUTERS", "LAPTOPS"];  // Array with the alternating words
+                                    let currentIndex = 0;
+                                
+                                    function alternateText() {
+                                        currentIndex = (currentIndex + 1) % phrases.length; // Toggle between 0 and 1
+                                        document.getElementById("rotating-text").innerText = phrases[currentIndex]; // Update the text
+                                    }
+                                
+                                    setInterval(alternateText, 2000); // Change the text every 2 seconds
+                                </script>
+                                
                             </div>
                         </div>
                     </div>
@@ -241,9 +253,9 @@
                         <div class="row">
                             <div class="col-12 col-md-6 col-xl-5">
                                 <div class="ct-slider-text">
-                                    <h1 class="slider-title">Dealing <br> <strong>With <span class="green">COMPUTERS</span></strong></h1>
+                                    <h1 class="slider-title">Dealing <br> <strong>With <span class="green">LAPTOPS</span></strong></h1>
                                     <p class="d-none d-md-block">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-                                    <a href="https://wa.me/0708466793/" target="_blank" class="btn ral btn-outline-primary vigo-btn hvr-shutter-out-horizontal bg-green border-transparent white focus-none">ORDER NOW</a>
+                                    <a href="https://wa.me/+254708466793/" target="_blank" class="btn ral btn-outline-primary vigo-btn hvr-shutter-out-horizontal bg-green border-transparent white focus-none">ORDER NOW</a>
                                 </div>
                             </div>
                         </div>
@@ -252,7 +264,9 @@
             </div>
         </div>
     </section>
-    
+   
+        
+  
     <!-- ==============================
         Call To Action Section
     =================================== -->
@@ -270,7 +284,7 @@
                         <p class="mr-0 white call-to-action-subtitle cou">
                             <marquee>BUY AND REPAIR MACHINES WITH 
                             <p style="color: tomato">VOSTER_TECH
-                                 <a href="https://wa.me/0708466793"> <img src="img/whatsapp.jpeg"alt="WhatsApp Icon" style="width: 24px; height: 24px; margin-right: 8px;">WHATSAPP</a>
+                                 <a href="https://wa.me/+254708466793"> <img src="img/whatsapp.jpeg"alt="WhatsApp Icon" style="width: 24px; height: 24px; margin-right: 8px;">WHATSAPP</a>
 
                             </p>
                         </marquee>
@@ -279,16 +293,16 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-3 col-lg-2 col-xl-2 d-md-flex align-items-center text-center call-to-action-view-btn">
-                    <a href="https://wa.me/0708466793/" target="_blank" class="btn ral btn-outline-primary vigo-btn hvr-shutter-in-horizontal focus-none bg-white border-transparent green">VIEW PRODUCT</a>
+                    <a href="https://wa.me/+254708466793/" target="_blank" class="btn ral btn-outline-primary vigo-btn hvr-shutter-in-horizontal focus-none bg-white border-transparent green">VIEW PRODUCT</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- ==============================
-        Features Section
-    =================================== -->
-    <section class="features" id="features">
+        services Section
+    
+    <section class="services" id="services">
         <div class="container custom-container">
             <div class="row justify-content-center">
                 <div class="col-md-12">
@@ -314,7 +328,7 @@
                 <div class="col-12 col-sm-8 col-md-6 col-lg-3 col-xl-3 features-box text-center">
                     <img src="img/lenovo-300x300.webp" class="image">
                     <img src="img/lenovo.webp" class="image" >
-                    <img src="img/student.webp" class="image" >
+                    <img src="img/hplaptop.jpg" class="image" >
                     <br>
                     <img src="img/XI-YGA-300x300.webp" class="image">
                     <img src="img/HPency.webp" class="image" >
@@ -348,15 +362,15 @@
                         <h5 class="features-title mr-0">Comp & Printers Hardware</h5>
                         <p class="card-text">There are a variety of Computer and printer components in store inluding Catriages, HDD, RAM, SSD, Ink etc.</p>
                     </div>
-                </div>
+                </div> 
             </div>
         </div>
     </section>
-
+=================================== -->
     <!-- ==============================
         Services Section
     =================================== -->
-    <section class="services">
+    <section class="services" id="services">
         <div class="container custom-container">
             <div class="row justify-content-center">
                 <div class="col-md-12">
@@ -366,42 +380,46 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-10 col-md-10 col-lg-6 col-xl-6 d-flex align-items-center">
-                    <img src="img/services-img.jpg" class="img-fluid services-big-img" alt="services-img">
+                    <img src="img/Laptop-Computer-Repair.png" class="img-fluid services-big-img" alt="comp_repair.imag">
                 </div>
                 <div class="col-12 col-sm-10 col-md-11 col-lg-6 col-xl-6">
                     <div class="services-container-title">
-                        <h5 class="page-sub-title mr-0">Youre Dream</h5>
-                        <h3 class="page-main-title mr-0">Body Is just Click away</h3>
+                        <h5 class="page-sub-title mr-0">Your Tech Solutions</h5>
+                        <h3 class="page-main-title mr-0">Expert Laptop Services, Desktop Repair & Sales</h3>
                     </div>
                     <div class="d-md-flex justify-content-between">
                         <div class="services-box pos-r">
-                            <h6 class="services-box-title mr-0">Increased Energy</h6>
-                            <p class="mr-0">There are many variations of passages of Lorem Ipsum that available, but the majority have suffered alteration in some form, by injected humour.</p>
+                            <h6 class="services-box-title mr-0">Laptop Services</h6>
+                            <p class="mr-0">At Voster Tech, we provide comprehensive laptop services, including software troubleshooting, hardware upgrades, 
+                                and system optimization to keep your device running smoothly.</p>
                         </div>
 
                         <div class="services-box pos-r">
-                            <h6 class="services-box-title mr-0">Bone Builder</h6>
-                            <p class="mr-0">There are many variations of passages of Lorem Ipsum that available, but the majority have suffered alteration in some form, by injected humour.</p>
+                            <h6 class="services-box-title mr-0">Desktop Repair</h6>
+                            <p class="mr-0">Our expert technicians are equipped to handle all desktop repair needs, 
+                                from motherboard fixes to power supply replacements, ensuring your machine performs at its best</p>
                         </div>
                     </div>
                     <div class="d-md-flex justify-content-between services-box-bottom-border">
                         <div class="services-box pos-r">
-                            <h6 class="services-box-title mr-0">Weight Loss</h6>
-                            <p class="mr-0">There are many variations of passages of Lorem Ipsum that available, but the majority have suffered alteration in some form, by injected humour.</p>
+                            <h6 class="services-box-title mr-0">Sales</h6>
+                            <p class="mr-0">Looking for a new desktop or laptop? Voster Tech offers a wide range of top-brand computers at competitive 
+                                prices, with expert advice to help you make the right choice.</p>
                         </div>
 
                         <div class="services-box pos-r">
-                            <h6 class="services-box-title mr-0">Stress Release</h6>
-                            <p class="mr-0">There are many variations of passages of Lorem Ipsum that available, but the majority have suffered alteration in some form, by injected humour.</p>
+                            <h6 class="services-box-title mr-0">Custom Builder</h6>
+                            <p class="mr-0">Want a machine tailored to your specific needs? We specialize in custom-built desktops, 
+                                providing high-performance systems designed just for you.</p>
                         </div>
                     </div>
                     <div class="d-flex justify-content-between services-offer">
                         <div class="product-offers ral">
                             *** Black Friday Offer on This Month <strong class="offer-limit green ral">10% Off</strong>
-                            on this <span class="green services-offer-text-highlights ral">Whey Protein</span>
+                            on this <span class="green services-offer-text-highlights ral">Laptop, Storage Media and Desktop Repairs</span>
                         </div>
                         <div class="product-offers-btn">
-                            <a href="https://wa.me/0708466793/" target="_blank" class="btn ral btn-outline-primary vigo-btn hvr-shutter-out-horizontal bg-green border-transparent white focus-none">ORDER NOW</a>
+                            <a href="https://wa.me/+254708466793/" target="_blank" class="btn ral btn-outline-primary vigo-btn hvr-shutter-out-horizontal bg-green border-transparent white focus-none">ORDER NOW</a>
                         </div>
                     </div>
                 </div>
@@ -420,7 +438,7 @@
                         Youtube Video Section
                     ============================== -->
                     <div data-video="p3MbX1wAP40" id="video" class="pos-r">
-                      <img class="figure-img img-fluid" src="img/about.jpg" alt="Use your own screenshot.">
+                      <img class="figure-img img-fluid" src="img/" alt="Use your own screenshot.">
                     </div>
                 </div>
                 <div class="col-12 col-sm-10 col-md-11 col-lg-6 col-xl-6 about-section-area">
@@ -436,6 +454,9 @@
                                 always on standby to address any inquiries or concerns you may have, ensuring a smooth and enjoyable experience from 
                                 browsing to purchase and beyond.
 
+                            </p>
+                            <p>The above sow s hopw we can be abble to customize the computer desktops, with a view to satisafy our clients.<BR>
+                                <STRONG style="color: BLUE"> WE OFFER FREE DELIVERY </STRONG>
                             </p>
                         </div>
                     </div>
@@ -453,36 +474,40 @@
             <div class="row justify-content-center">
                 <div class="col-md-12 product-features-main-title">
                     <div class="page-title text-center">
-                        <h5 class="page-sub-title mr-0">Our</h5>
-                        <h3 class="page-main-title mr-0">COMPUTERS Features</h3>
+                        <h5 class="page-sub-title mr-0">OUR SPARES </h5>
+                        <h3 class="page-main-title mr-0">COMPUTER Features</h3>
                     </div>
                 </div>
                 <div class="col-12 col-sm-10 col-md-11 col-lg-6 col-xl-4 order-lg-2  order-xl-1">
                     <div class="product-features-left">
                         <div class="media mrt-0 flex-lg-row-reverse">
                             <div class="product-features-img align-self-center pos-r">
-                                <img class="pos-center" src="img/product-features-icon-1.png" alt="product-features-icon">
+                                <img class="pos-center" src="img/comp_repair.jpg" alt="comp">
                             </div>
                             <div class="media-body text-right">
-                                <h5 class="product-features-title mt-0">COMPUTERS Element Text</h5>
-                                <p class="product-features-content mr-0">There are many variations of passages of Lorem Ipsum  is  that available, but the majority have suffered alteration in some form dummy now.</p>
+                                <h5 class="product-features-title mt-0">MOTHERBOARD</h5>
+                                <p class="product-features-content mr-0">This is a new spare motherbord well set with CMOS, ICs and
+                                    fans. It has 7 expansion slots left free excluding 3 RAM slots which can hold upto 48GB RAM with 3 HDD.
+                                </p>
                             </div>
                         </div>
                         <div class="media flex-lg-row-reverse">
                             <div class="product-features-img align-self-center text-center">
                             <div class="product-features-img align-self-center pos-r">
-                                <img class="pos-center" src="img/product-features-icon-2.png" alt="product-features-icon">
+                                <img class="pos-center" src="img/hplaptop.jpg" alt="comp">
                             </div>
                             </div>
                             <div class="media-body text-right">
-                                <h5 class="product-features-title mt-0">Computer Element Text</h5>
-                                <p class="product-features-content mr-0">There are many variations of passages of Lorem Ipsum  is  that available, but the majority have suffered alteration in some form dummy now.</p>
+                                <h5 class="product-features-title mt-0">MONITORS/SCREENS</h5>
+                                <p class="product-features-content mr-0">We sell and replace various type of screens. They are of differennt models
+                                    and sizes with different cost which is negotiable.
+                                </p>
                             </div>
                         </div>
                         <div class="media flex-lg-row-reverse">
                             <div class="product-features-img align-self-center text-center">
                             <div class="product-features-img align-self-center pos-r">
-                                <img class="pos-center" src="img/product-features-icon-3.png" alt="product-features-icon">
+                                <img class="pos-center" src="img/ssd2.jpg" alt="comp">
                             </div>
                             </div>
                             <div class="media-body text-right">
@@ -493,13 +518,13 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-10 col-md-11 col-lg-12 col-xl-4 text-center order-lg-1 order-xl-2 content-product-features-img">
-                    <img src="img/product-features-big-img.png" class="img-fluid" alt="product features big img">
+                    <img src="img/REPAIR.jpeg" class="img-fluid" alt="product features big img">
                 </div>
                 <div class="col-12 col-sm-10 col-md-11 col-lg-6 col-xl-4 order-lg-3 order-xl-3">
                     <div class="product-features-right">
                         <div class="media product-features-mr-lg-0 right-first-child">
                             <div class="product-features-img align-self-center pos-r">
-                                <img class="pos-center" src="img/product-features-icon-4.png" alt="product-features-icon">
+                                <img class="pos-center" src="img/refurbdell.jpg" alt="comp">
                             </div>
                             <div class="media-body">
                                 <h5 class="product-features-title mt-0">Computer Element Text</h5>
@@ -508,7 +533,7 @@
                         </div>
                         <div class="media">
                             <div class="product-features-img align-self-center pos-r">
-                                <img class="pos-center" src="img/product-features-icon-5.png" alt="product-features-icon">
+                                <img class="pos-center" src="img/apple_macbook.jpg" alt="comp">
                             </div>
                             <div class="media-body">
                                 <h5 class="product-features-title mt-0">Computer Element Text</h5>
@@ -517,7 +542,7 @@
                         </div>
                         <div class="media mrb-0">
                             <div class="product-features-img align-self-center pos-r">
-                                <img class="pos-center" src="img/product-features-icon-6.png" alt="product-features-icon">
+                                <img class="pos-center" src="img/dellopti.webp" alt="comp">
                             </div>
                             <div class="media-body">
                                 <h5 class="product-features-title mt-0">Computer Element Text</h5>
@@ -539,12 +564,12 @@
                 <div class="col-md-12">
                     <div class="page-title text-center">
                         <h5 class="page-sub-title mr-0">Recommended</h5>
-                        <h3 class="page-main-title mr-0">By Best Doctor</h3>
+                        <h3 class="page-main-title mr-0">By Client</h3>
                     </div>
                 </div>
                 <div class="col-12 col-sm-10 col-md-11 col-lg-6 col-xl-4">
                     <div class="recommended-big-img text-center">
-                        <img src="img/recommended-img.png" class="img-fluid" alt="recommended img">
+                        <img src="img/ssd.jpg" class="img-fluid" alt="recommended img">
                     </div>
                 </div>
                 <div class="col-12 col-sm-10 col-md-11 col-lg-6 col-xl-8 recommended-area">
@@ -552,7 +577,7 @@
                         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                                 <div class="recommended-container-title">
                                 <h5 class="page-sub-title mr-0">Awesome Computer </h5>
-                                <h3 class="page-main-title mr-0">We Have 20 Years Of Experince</h3>
+                                <h3 class="page-main-title mr-0">We Have 5 years experience </h3>
                             </div>
                         </div>
                         <div class="col-12 col-sm-12 col-md-6 col-lg-12 col-xl-6">
@@ -614,18 +639,19 @@
             <div class="row justify-content-center">
                 <div class="col-md-12">
                     <div class="page-title text-center">
-                        <h5 class="page-sub-title mr-0">Our Best</h5>
-                        <h3 class="page-main-title mr-0">Product Gallery</h3>
+                        <h5 class="page-sub-title mr-0">Our Best over the rest</h5>
+                        <h3 class="page-main-title mr-0">Accessory Gallary</h3>
                     </div>
                 </div>
                 <div class="col-12 col-sm-10 col-md-11 col-lg-12 col-xl-12">
                     <div  class="btn-group gallery-filter-btn-group">
                         <div class="gallery-menu-box">
                             <button type="button" data-filter="all" class="ral btn border-0 btn-secondary cursor-pointer focus-none">All</button>
-                            <button type="button" data-filter=".category-a" class="ral btn border-0 btn-secondary cursor-pointer focus-none">Protein</button>
-                            <button type="button" data-filter=".category-b" class="ral btn border-0 btn-secondary cursor-pointer focus-none">Life Style</button>
-                            <button type="button" data-filter=".category-c" class="ral btn border-0 btn-secondary cursor-pointer focus-none">Nutrition</button>
-                            <button type="button" data-filter=".category-d" class="ral btn border-0 btn-secondary cursor-pointer focus-none">Vitamins</button>
+                            <button type="button" data-filter=".category-b" class="ral btn border-0 btn-secondary cursor-pointer focus-none">Desktops</button>
+                            <button type="button" data-filter=".category-c" class="ral btn border-0 btn-secondary cursor-pointer focus-none">laptops</button>
+                            <button type="button" data-filter=".category-d" class="ral btn border-0 btn-secondary cursor-pointer focus-none">Printers</button> 
+                            <button type="button" data-filter=".category-a" class="ral btn border-0 btn-secondary cursor-pointer focus-none">Storage Media</button>
+
                         </div>
                     </div>
 
@@ -634,14 +660,14 @@
                             <div class="filtr-item">
                                 <div class="gallery-hover">
                                     <div class="gallery-img-box pos-r">
-                                        <a href="img/gallery-img-1.jpg" class="image-link gallery-overlay">
-                                            <div class="search-icon"><img src="img/lap1.jpeg" alt=""></div>
-                                            <img class="img-fluid" src="img/gallery-img-1.jpg" alt="sample image">
+                                        <a href="img/hp pc.jpg" class="image-link gallery-overlay">
+                                            <div class="search-icon"><img src="img/" alt=""></div>
+                                            <img class="img-fluid" src="img/flash2.jpeg" alt="sample image">
                                         </a>
                                     </div>
                                     <div class="gallery-content-box text-center">
-                                        <h6 class="item-desc ral mr-0">VIGO Prima Force</h6>
-                                        <p class="gallery-category ral mr-0">Protein</p>
+                                        <h6 class="item-desc ral mr-0">Quality PC </h6>
+                                        <p class="gallery-category ral mr-0">Desktop</p>
                                     </div>
                                 </div>
                             </div>
@@ -650,14 +676,14 @@
                             <div class="filtr-item">
                                 <div class="gallery-hover">
                                     <div class="gallery-img-box pos-r">
-                                        <a href="img/gallery-img-2.jpg" class="image-link gallery-overlay">
-                                            <div class="search-icon"><img src="img/lap1.jpeg" alt=""></div>
-                                            <img class="img-fluid" src="img/gallery-img-2.jpg" alt="sample image">
+                                        <a href="img/hp pc.jpg" class="image-link gallery-overlay">
+                                            <div class="search-icon"><img src="img/" alt=""></div>
+                                            <img class="img-fluid" src="img/hp pc.jpg" alt="sample image">
                                         </a>
                                     </div>
                                     <div class="gallery-content-box text-center">
-                                        <h6 class="item-desc ral mr-0">VIGO Max</h6>
-                                        <p class="gallery-category ral mr-0">Diet &#38; Life Style</p>
+                                        <h6 class="item-desc ral mr-0">HP DESKTOP</h6>
+                                        <p class="gallery-category ral mr-0">  HP_desktop 406 G2 (6th Gen) Core i7 3.4GZ /8GB RAM /1TB HDD </p>
                                     </div>
                                 </div>
                             </div>
@@ -666,14 +692,46 @@
                             <div class="filtr-item">
                                 <div class="gallery-hover">
                                     <div class="gallery-img-box pos-r">
-                                        <a href="img/gallery-img-3.jpg" class="image-link gallery-overlay">
-                                            <div class="search-icon"><img src="img/lap1.jpeg" alt=""></div>
-                                            <img class="img-fluid" src="img/gallery-img-3.jpg" alt="sample image">
+                                        <a href="img/lap3.jpeg" class="image-link gallery-overlay">
+                                            <div class="search-icon"><img src="img/" alt=""></div>
+                                            <img class="img-fluid" src="img/lenovo2.jpg" alt="sample image">
                                         </a>
                                     </div>
                                     <div class="gallery-content-box text-center">
-                                        <h6 class="item-desc ral mr-0">VIGO Extract</h6>
-                                        <p class="gallery-category ral mr-0">Nutrition</p>
+                                        <h6 class="item-desc ral mr-0">LENOVO YOGA</h6>
+                                        <p class="gallery-category ral mr-0">Lenovo Yoga X13e, 512SSD 16GB RAM Expandable, coi5 intel processor speed 2.4ghz</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mix category-b category-c col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" data-order="3">
+                            <div class="filtr-item">
+                                <div class="gallery-hover">
+                                    <div class="gallery-img-box pos-r">
+                                        <a href="img/lap3.jpeg" class="image-link gallery-overlay">
+                                            <div class="search-icon"><img src="img/" alt=""></div>
+                                            <img class="img-fluid" src="img/lap3.jpeg" alt="sample image">
+                                        </a>
+                                    </div>
+                                    <div class="gallery-content-box text-center">
+                                        <h6 class="item-desc ral mr-0">LENOVO</h6>
+                                        <p class="gallery-category ral mr-0">Lenovo Desktop core i3 4GB 500GB 19 inch Monitor</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mix category-b category-c col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" data-order="3">
+                            <div class="filtr-item">
+                                <div class="gallery-hover">
+                                    <div class="gallery-img-box pos-r">
+                                        <a href="img/lap4.jpeg" class="image-link gallery-overlay">
+                                            <div class="search-icon"><img src="img/" alt=""></div>
+                                            <img class="img-fluid" src="img/lap4.jpeg" alt="sample image">
+                                        </a>
+                                    </div>
+                                    <div class="gallery-content-box text-center">
+                                        <h6 class="item-desc ral mr-0">hp laptop</h6>
+                                        <p class="gallery-category ral mr-0">14 inch 8gb, 256 ssd with HDM and VGA</p>
                                     </div>
                                 </div>
                             </div>
@@ -682,14 +740,14 @@
                             <div class="filtr-item">
                                 <div class="gallery-hover">
                                     <div class="gallery-img-box pos-r">
-                                        <a href="img/gallery-img-4.jpg" class="image-link gallery-overlay">
-                                            <div class="search-icon"><img src="img/lap1.jpeg" alt=""></div>
-                                            <img class="img-fluid" src="img/gallery-img-4.jpg" alt="sample image">
+                                        <a href="img/flash.jpg" class="image-link gallery-overlay">
+                                            <div class="search-icon"><img src="img/" alt=""></div>
+                                            <img class="img-fluid" src="img/flash.jpg" alt="sample image">
                                         </a>
                                     </div>
                                     <div class="gallery-content-box text-center">
-                                        <h6 class="item-desc ral mr-0">VIGO Alpha</h6>
-                                        <p class="gallery-category ral mr-0">Vitamins</p>
+                                        <h6 class="item-desc ral mr-0">STORAGE MEDIA</h6>
+                                        <p class="gallery-category ral mr-0">scan Disk 128gb, 64gb</p>
                                     </div>
                                 </div>
                             </div>
@@ -698,14 +756,14 @@
                             <div class="filtr-item">
                                 <div class="gallery-hover">
                                     <div class="gallery-img-box pos-r">
-                                        <a href="img/gallery-img-5.jpg" class="image-link gallery-overlay">
-                                            <div class="search-icon"><img src="img/lap1.jpeg" alt=""></div>
-                                            <img class="img-fluid" src="img/gallery-img-5.jpg" alt="sample image">
+                                        <a href="img/flash2.jpeg" class="image-link gallery-overlay">
+                                            <div class="search-icon"><img src="img/" alt=""></div>
+                                            <img class="img-fluid" src="img/flash2.jpeg" alt="sample image">
                                         </a>
                                     </div>
                                     <div class="gallery-content-box text-center">
-                                        <h6 class="item-desc ral mr-0">VIGO  Enhance Pro</h6>
-                                        <p class="gallery-category ral mr-0">Protein</p>
+                                        <h6 class="item-desc ral mr-0">STORAGE MEDIA</h6>
+                                        <p class="gallery-category ral mr-0">Hp 32, ITB </p>
                                     </div>
                                 </div>
                             </div>
@@ -714,14 +772,30 @@
                             <div class="filtr-item">
                                 <div class="gallery-hover">
                                     <div class="gallery-img-box pos-r">
-                                        <a href="img/gallery-img-6.jpg" class="image-link gallery-overlay">
-                                            <div class="search-icon"><img src="img/lap1.jpeg" alt=""></div>
-                                            <img class="img-fluid" src="img/gallery-img-6.jpg" alt="sample image">
+                                        <a href="img/canon.png" class="image-link gallery-overlay">
+                                            <div class="search-icon"><img src="img/" alt=""></div>
+                                            <img class="img-fluid" src="img/canon.png" alt="sample image">
                                         </a>
                                     </div>
                                     <div class="gallery-content-box text-center">
-                                        <h6 class="item-desc ral mr-0">VIGO Natural Been</h6>
-                                        <p class="gallery-category ral mr-0">Diet &#38; Life Style</p>
+                                        <h6 class="item-desc ral mr-0">PRINTER</h6>
+                                        <p class="gallery-category ral mr-0">canon wireless + usb 128gb</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mix category-a category-d col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" data-order="4">
+                            <div class="filtr-item">
+                                <div class="gallery-hover">
+                                    <div class="gallery-img-box pos-r">
+                                        <a href="img/epison printer.jpeg" class="image-link gallery-overlay">
+                                            <div class="search-icon"><img src="img/" alt=""></div>
+                                            <img class="img-fluid" src="img/epison printer.jpeg" alt="sample image">
+                                        </a>
+                                    </div>
+                                    <div class="gallery-content-box text-center">
+                                        <h6 class="item-desc ral mr-0">PRINTER</h6>
+                                        <p class="gallery-category ral mr-0">epison white in color, speed appro. 0.65s</p>
                                     </div>
                                 </div>
                             </div>
@@ -734,8 +808,9 @@
 
     <!-- ==============================
         Price Section
+        first section of laptops and computer and price tag
     =================================== -->
-    <section class="vigo-price" id="vigo-price">
+    <section class="stock" id="stock">
         <div class="container custom-container">
             <div class="row justify-content-center">
                 <div class="col-md-12">
@@ -762,7 +837,7 @@
                             </li>
                         </ul>
                         <div class="pricing-order-now text-center">
-                            <a href="https://wa.me/0708466793/" target="_blank" class="btn ral btn-outline-primary vigo-btn hvr-shutter-out-horizontal bg-green border-transparent white focus-none">ORDER NOW</a>
+                            <a href="https://wa.me/+254708466793/" target="_blank" class="btn ral btn-outline-primary vigo-btn hvr-shutter-out-horizontal bg-green border-transparent white focus-none">ORDER NOW</a>
                         </div>
                     </div>
                 </div>
@@ -778,13 +853,13 @@
                             <li class="list-group-item border-transparent">
                                 <div class="highlight-text lato display-inline-block">Description<br>
                                 </div>
-                        <ol><smal>HP EliteBook 840 G5 Intel Core i5 8th Gen 8GB RAM 256GB SSD 14 Inches FHD Display</small></ol>
+                        <ol><smal>HP EliteBook 840 G5 Intel Core i5 8th Gen 8GB RAM 256GB 14inch FHD Display</small></ol>
                             </li>
                             <li class="list-group-item border-transparent"><h5 class="pricing mr-0 lato"  style="color:tomato" >Ksh.26,999.00</h5>
                             </li>
                         </ul>
                         <div class="pricing-order-now text-center">
-                            <a href="https://wa.me/0708466793/" target="_blank" class="btn ral btn-outline-primary vigo-btn hvr-shutter-out-horizontal bg-green border-transparent white focus-none">ORDER NOW</a>
+                            <a href="https://wa.me/+254708466793/" target="_blank" class="btn ral btn-outline-primary vigo-btn hvr-shutter-out-horizontal bg-green border-transparent white focus-none">ORDER NOW</a>
                         </div>
                     </div>
                 </div>
@@ -806,7 +881,7 @@
                             </li>
                         </ul>
                         <div class="pricing-order-now text-center">
-                            <a href="https://wa.me/0708466793" target="_blank" class="btn ral btn-outline-primary vigo-btn hvr-shutter-out-horizontal bg-green border-transparent white focus-none">ORDER NOW</a>
+                            <a href="https://wa.me/+254708466793" target="_blank" class="btn ral btn-outline-primary vigo-btn hvr-shutter-out-horizontal bg-green border-transparent white focus-none">ORDER NOW</a>
                         </div>
                     </div>
                 </div>
@@ -830,7 +905,101 @@
                             </li>
                         </ul>
                         <div class="pricing-order-now text-center">
-                            <a href="https://wa.me/0708466793/" target="_blank" class="btn ral btn-outline-primary vigo-btn hvr-shutter-out-horizontal bg-green border-transparent white focus-none">ORDER NOW</a>
+                            <a href="https://wa.me/+254708466793/" target="_blank" class="btn ral btn-outline-primary vigo-btn hvr-shutter-out-horizontal bg-green border-transparent white focus-none">ORDER NOW</a>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <!--
+                sectio two of the computers and price tag 
+                -->
+                <div class="col-12 col-sm-10 col-md-6 col-lg-3 col-xl-3">
+                    <div class="vigo-pricing-table">
+                        <div class="pricing-icon-box text-center" style="position: relative; width: 100%; height: auto; overflow: hidden;">
+                            <img src="img/ssd2.jpg" alt="pricing table img" style="width: 80%; height: 80%; object-fit: cover;">
+                        </div>
+                        <div class="price-package pos-r text-center">
+                            <p class="pos-r mr-0 ral"> SSD & HDD</p>
+                        </div>
+                        <ul class="list-group text-center">
+                            <li class="list-group-item border-transparent">
+                                <div class="highlight-text lato display-inline-block">Description<br>
+                                </div>
+                        <ol>Quality, Durable and affordable SSD 256SSD and 500GB, 1TB disks </ol>
+                            </li>
+                            <li class="list-group-item border-transparent"><h5 class="pricing mr-0 lato"  style="color:tomato" >Ksh.2000.00</h5>
+                            </li>
+                        </ul>
+                        <div class="pricing-order-now text-center">
+                            <a href="https://wa.me/+254708466793/" target="_blank" class="btn ral btn-outline-primary vigo-btn hvr-shutter-out-horizontal bg-green border-transparent white focus-none">ORDER NOW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-10 col-md-6 col-lg-3 col-xl-3">
+                    <div class="vigo-pricing-table">
+                        <div class="pricing-icon-box text-center" style="position: relative; width: 100%; height: auto; overflow: hidden;">
+                            <img src="img/flash2.jpeg" alt="pricing table img" style="width: 80%; height: 80%; object-fit: cover;">
+                        </div>
+                        <div class="price-package pos-r text-center">
+                            <p class="pos-r mr-0 ral">Durable Flash</p>
+                        </div>
+                        <ul class="list-group text-center">
+                            <li class="list-group-item border-transparent">
+                                <div class="highlight-text lato display-inline-block">Description<br>
+                                </div>
+                        <ol><smal>HP 64 GB flash</small></ol>
+                            </li>
+                            <li class="list-group-item border-transparent"><h5 class="pricing mr-0 lato"  style="color:tomato" >Ksh.1200.00</h5>
+                            </li>
+                        </ul>
+                        <div class="pricing-order-now text-center">
+                            <a href="https://wa.me/+254708466793/" target="_blank" class="btn ral btn-outline-primary vigo-btn hvr-shutter-out-horizontal bg-green border-transparent white focus-none">ORDER NOW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-10 col-md-6 col-lg-3 col-xl-3">
+                    <div class="vigo-pricing-table">
+                        <div class="pricing-icon-box text-center" style="position: relative; width: 100%; height: auto; overflow: hidden;">
+                            <img src="img/Plotter.jpeg" alt="pricing table img" style="width: 80%; height: 80%; object-fit: cover;">
+                        </div>
+                        <div class="price-package pos-r text-center">
+                            <p class="pos-r mr-0 ral">Plotter</p>
+                        </div>
+                        <ul class="list-group text-center">
+                            <li class="list-group-item border-transparent">
+                                <div class="highlight-text lato display-inline-block">Description<br>
+                                </div>
+                        <ol>Large complete set of plotter for printing billboards, clothes, and caps</ol>
+                            </li>
+                            <li class="list-group-item border-transparent"><h5 class="pricing mr-0 lato"  style="color:tomato" >Ksh.10,999.00</h5>
+                            </li>
+                        </ul>
+                        <div class="pricing-order-now text-center">
+                            <a href="https://wa.me/+254708466793" target="_blank" class="btn ral btn-outline-primary vigo-btn hvr-shutter-out-horizontal bg-green border-transparent white focus-none">ORDER NOW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-10 col-md-6 col-lg-3 col-xl-3">
+                    <div class="vigo-pricing-table">
+                        <div class="pricing-icon-box text-center" style="position: relative; width: 100%; height: auto; overflow: hidden;">
+                            <img src="img/REPAIR.jpeg" alt="pricing table img" style="width: 80%; height: 80%; object-fit: cover;">
+                        </div>
+                        <div class="price-package pos-r text-center">
+                            <p class="pos-r mr-0 ral">Repairs</p>
+                        </div>
+                        <ul class="list-group text-center">
+                            <li class="list-group-item border-transparent">
+                                <div class="highlight-text lato display-inline-block">Description<br>
+                                </div>
+                        <ol>HDD, SSD, FLASH</ol>
+                        <ol>MONITORS, CPU, FAN</ol>
+                        <ol>KEYBORAD MOTHERBOARD</ol>
+                            </li>
+                            <li class="list-group-item border-transparent"><h5 class="pricing mr-0 lato"  style="color:tomato" >price negotiable</h5>
+                            </li>
+                        </ul>
+                        <div class="pricing-order-now text-center">
+                            <a href="https://wa.me/+254708466793/" target="_blank" class="btn ral btn-outline-primary vigo-btn hvr-shutter-out-horizontal bg-green border-transparent white focus-none">ORDER NOW</a>
                         </div>
                     </div>
                 </div>
@@ -846,231 +1015,100 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="page-title text-center">
-                        <h5 class="page-sub-title mr-0">Awesome</h5>
-                        <h3 class="page-main-title white mr-0">Components & Accessories</h3>
+                        <h5 class="page-sub-title mr-0">NEW BRAND</h5>
+                        <h3 class="page-main-title white mr-0"></h3>
                     </div>
                 </div>
                 <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 pd-0 before-none">
                     <div class="process-box pos-r text-center">
-                        <img src="img/process-icon-1.png" class="img-fluid" alt="process img">
-                        <p class="white mr-0">Burn Calories</p>
+                        <img src="img/dellopti.webp" class="img-fluid" alt="process img">
+                        <p class="white mr-0">DELL</p>
                     </div>
                 </div>
                 <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 pd-0 before-none">
                     <div class="process-box pos-r text-center">
-                        <img src="img/process-icon-2.png" class="img-fluid" alt="process img">
-                        <p class="white mr-0">Suppress Appetite</p>
+                        <img src="img/apple_macbook.jpg" class="img-fluid" alt="process img">
+                        <p class="white mr-0">MAC BOOK</p>
                     </div>
                 </div>
                 <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 pd-0 before-none">
                     <div class="process-box pos-r text-center">
-                        <img src="img/process-icon-3.png" class="img-fluid" alt="process img">
-                        <p class="white mr-0">Increass Enargy</p>
+                        <img src="img/HPency.webp" class="img-fluid" alt="process img">
+                        <p class="white mr-0">HP LAPTOP</p>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2.5 pd-0">
+                    <div class="process-box before-none pos-r text-center">
+                        <img src="img/canon.png" class="img-fluid" alt="process img">
+                        <p class="white mr-0">PRINTER</p>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 pd-0 before-none">
+                    <div class="process-box pos-r text-center">
+                        <img src="img/storage1.jpeg" class="img-fluid" alt="process img">
+                        <span>
+
+                        </span>
+                        <p class="white mr-0">HARD DISK</p>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 pd-0 before-none">
+                    <div class="process-box pos-r text-center">
+                        <img src="img/highlenovo.jpg" class="img-fluid" alt="process img">
+                        <p class="white mr-0">LENOVO</p>
+                    </div>
+                </div>
+                <div class="col-5 col-sm-5 col-md-3 col-lg-3 col-xl-3 pd-0 before-none">
+                    <div class="process-box pos-r text-center">
+                        <img src="img/new2.jpg" class="img-fluid" alt="process img">
+                        <p class="white mr-0">HP ELITEBOOK</p>
                     </div>
                 </div>
                 <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 pd-0">
                     <div class="process-box before-none pos-r text-center">
-                        <img src="img/process-icon-4.png" class="img-fluid" alt="process img">
-                        <p class="white mr-0">Happy Life</p>
+                        <img src="img/case.webp" class="img-fluid" alt="process img">
+                        <p class="white mr-0">DISK CASE</p>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 pd-0 before-none">
+                    <div class="process-box pos-r text-center">
+                        <img src="img/lenovo.webp" class="img-fluid" alt="process img">
+                        <p class="white mr-0">LENOVO THINKPAD</p>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 pd-0">
+                    <div class="process-box before-none pos-r text-center">
+                        <img src="img/desktop.png" class="img-fluid" alt="process img">
+                        <p class="white mr-0">DELL DESKTOP</p>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 pd-0 before-none">
+                    <div class="process-box pos-r text-center">
+                        <img src="img/canone2.webp" class="img-fluid" alt="process img">
+                        <p class="white mr-0">PRINTER</p>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 pd-0">
+                    <div class="process-box before-none pos-r text-center">
+                        <img src="img/lenovo-300x300.webp" class="img-fluid" alt="process img">
+                        <span class="description">
+                            
+                            <ul>
+                                Lenovo Thinkpad
+                            </ul>
+                        </span>
+                        <p class="white mr-0">LONOVO</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ==============================
-        Components & AccessoriesSection
-    =================================== -->
-    <section class="ingredients" id="ingredients">
-        <div class="container custom-container">
-            <div class="row justify-content-center">
-                <div class="col-md-12">
-                    <div class="page-title text-center">
-                        <h5 class="page-sub-title mr-0">COMPUTERS</h5>
-                        <h3 class="page-main-title mr-0">Components & Accessories</h3>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-10 col-lg-12">
-                    <h5 class="ingredients-Name">Components & Accessories Name</h5>
-                </div>
-                <div class="col-12 col-sm-10 col-md-11 col-lg-6 col-xl-6">
-                    <div class="ingredients-name">
-                        <div id="vigoaccordion" data-children=".item">
-                            <div class="item">
-                                <a class="display-block accordion-menu active" data-toggle="collapse" data-parent="#vigoaccordion" href="#vigoaccordion1" aria-expanded="true" aria-controls="vigoaccordion1">
-                                    Printers
-                                    <div class="accordion-menu-icon float-right">
-                                        <i class="fa fa-plus-square-o" aria-hidden="true"></i>
-                                    </div>
-                                    <div class="subtitle lato">Canone printer</div>
-                                </a>
-                                <div id="vigoaccordion1" class="collapse show" role="tabpanel">
-                                    <img src="img/canone2.webp" style="max-width: 30%; height:auto; padding-left:0">
-                                    <img src="img/canone2.webp" style="max-width: 30%; height:auto; padding-right:0">
-                                    <p class="accordion-content mb-3">
-                                        Inkjet System with 2 fine catridges, WIFI support, Boarerless printing appro. 65s  </p>
-                                        <div style="margin-top: 10px;">
-                                            <a href="https://wa.me/0708466793?text=I'm%20interested%20in%20the%20Inkjet%20Canone%20Printer%20with%202%20fine%20cartridges" 
-                                               style="display: flex; align-items: center; text-decoration: none; color: green;">
-                                                <img src="img/whatsapp.jpeg" alt="WhatsApp Icon" style="width: 24px; height: 24px; margin-right: 8px;">
-                                                Place Order
-                                            </a>
-                                        </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <a class="display-block accordion-menu" data-toggle="collapse" data-parent="#vigoaccordion" href="#vigoaccordion2" aria-expanded="false" aria-controls="vigoaccordion2">
-                                    Hard Disk, SSD 
-                                    <div class="accordion-menu-icon float-right">
-                                        <i class="fa fa-plus-square-o" aria-hidden="true"></i>
-                                    </div>
-                                    <div class="subtitle lato">price negotiable</div>
-                                </a>
-                                <div id="vigoaccordion1" class="collapse show" role="tabpanel">
-                                    <img src="img/hddexternal.jpeg" style="max-width: 30%; height:auto; padding-left:0">
-                                    <img src="img/hdd.webp" style="max-width: 20%; height:auto; padding-right:0">
-                                    <img src="img/ssd2.jpg" style="max-width: 20%; height:auto; padding-left:0">
-                                    <img src="img/ssd.jpg" style="max-width: 20%; height:auto; padding-right:0">
-                                    <p class="accordion-content mb-3">
-                                        SSDs and HDD 1TB, 500GB, SAMSUNG <br> 16TB transedent external HDD  </p>
-                                        <div style="margin-top: 10px;">
-                                            <a href="https://wa.me/0708466793?text=I'm%20interested%20in%20SSDs%20and%20HDD" 
-                                               style="display: flex; align-items: center; text-decoration: none; color: green;">
-                                                <img src="img/whatsapp.jpeg" alt="WhatsApp Icon" style="width: 24px; height: 24px; margin-right: 8px;">
-                                                Place Order
-                                            </a>
-                                        </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <a class="display-block accordion-menu" data-toggle="collapse" data-parent="#vigoaccordion" href="#vigoaccordion3" aria-expanded="false" aria-controls="vigoaccordion3">
-                                    CHARGER & USB
-                                    <div class="accordion-menu-icon float-right">
-                                        <i class="fa fa-plus-square-o" aria-hidden="true"></i>
-                                    </div>
-                                    <div class="subtitle lato">price negotiable</div>
-                                </a>
-                                <div id="vigoaccordion1" class="collapse show" role="tabpanel">
-                                    <img src="img/canone2.webp" style="max-width: 30%; height:auto; padding-left:0">
-                                    <img src="img/canone2.webp" style="max-width: 30%; height:auto; padding-right:0">
-                                    <p class="accordion-content mb-3">
-                                        Inkjet System with 2 fine catridges, WIFI support, Boarerless printing appro. 65s  </p>
-                                        <div style="margin-top: 10px;">
-                                            <a href="https://wa.me/0708466793?text=I'm%20interested%20in%20the%20Inkjet%20Canone%20Printer%20with%202%20fine%20cartridges" 
-                                               style="display: flex; align-items: center; text-decoration: none; color: green;">
-                                                <img src="img/whatsapp.jpeg" alt="WhatsApp Icon" style="width: 24px; height: 24px; margin-right: 8px;">
-                                                Place Order
-                                            </a>
-                                        </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <a class="display-block accordion-menu" data-toggle="collapse" data-parent="#vigoaccordion" href="#vigoaccordion4" aria-expanded="false" aria-controls="vigoaccordion4">
-                                    MONITORS
-                                    <div class="accordion-menu-icon float-right">
-                                        <i class="fa fa-plus-square-o" aria-hidden="true"></i>
-                                    </div>
-                                    <div class="subtitle lato">Price negotiable</div>
-                                </a>
-                                <div id="vigoaccordion4" class="collapse" role="tabpanel">
-                                    <p class="accordion-content mb-3">
-                                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.There are many is the variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form or randomised words which don't look even slightly believable.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <a class="display-block accordion-menu" data-toggle="collapse" data-parent="#vigoaccordion" href="#vigoaccordion5" aria-expanded="false" aria-controls="vigoaccordion5">
-                                    laptop covers
-                                    <div class="accordion-menu-icon float-right">
-                                        <i class="fa fa-plus-square-o" aria-hidden="true"></i>
-                                    </div>
-                                    <div class="subtitle lato">Price negotiable</div>
-                                </a>
-                                <div id="vigoaccordion5" class="collapse" role="tabpanel">
-                                    <p class="accordion-content mb-3">
-                                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.There are many is the variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form or randomised words which don't look even slightly believable.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-10 col-md-11 col-lg-6 col-xl-6">
-                    <img src="img/haroun.jpg" class="img-fluid ingredients-big" alt="Components & Accessoriesbig img">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==============================
-        Testimonial Section
    
-    <section class="testimonial">
-        <div class="container justify-content-center">
-            <div class="row justify-content-center">
-                <div class="col-12 col-sm-10 col-md-11 col-lg-12 col-xl-12">
-                    <div id="testimonial-carousel" class="owl-carousel owl-theme">
-                        <div class="item">
-                            <div class="testimonial-box text-center white">
-                                <img src="img/lap2.jpeg" class="quotes-img mr-auto" alt="quotes img">
-                                <br>
-                                <p class="testimonial-content mr-0">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.  you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
-                                <br>
-                                <div class="author-meta display-inline-block">
-                                    <div class="media">
-                                        <img class="align-self-center width-auto mr-3" src="img/canone2.webp" alt="author img">
-                                        <div class="media-body text-left">
-                                            <h5 class="ral mt-0">canon Printer</h5>
-                                            <p class="green mr-0">Quality and affordable</p>
-                                        </div>
-                                    </div>                                        
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimonial-box text-center white">
-                                <img src="img/lap1.jpeg" class="quotes-img mr-auto" alt="quotes img">
-                                <br>
-                                <p class="testimonial-content mr-0">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.  you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
-                                <br>
-                                <div class="author-meta display-inline-block">
-                                    <div class="media">
-                                        <img class="align-self-center width-auto mr-3" src="img/lenovo.webp" alt="author img">
-                                        <div class="media-body text-left">
-                                            <h5 class="ral mt-0">Laptop</h5>
-                                            <p class="green mr-0">Lenovo ThinkPad laptop</p>
-                                        </div>
-                                    </div>                                        
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimonial-box text-center white">
-                                <img src="img/lap2.jpeg" class="quotes-img mr-auto" alt="quotes img">
-                                <br>
-                                <p class="testimonial-content mr-0">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.  you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
-                                <br>
-                                <div class="author-meta display-inline-block">
-                                    <div class="media">
-                                        <img class="align-self-center width-auto mr-3" src="img/Plotter.jpeg" alt="author img">
-                                        <div class="media-body text-left">
-                                            <h5 class="ral mt-0">Plotter</h5>
-                                            <p class="green mr-0">Large printing plotter</p>
-                                        </div>
-                                    </div>                                        
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
- =================================== -->
     <!-- ==============================
         Product Section
     =================================== -->
-    <section class="vigo-product" id="vigo-product">
+    <section class="computer" id="computer">
         <div class="container custom-container">
             <div class="row">
                 <div class="col-md-12">
@@ -1144,7 +1182,7 @@
                                             <input type="number" class="form-control border-transparent black focus-none" placeholder="1">
                                         </div>
                                         <div class="col-4">
-                                            <a href="https://wa.me/0708466793/" target="_blank" class="btn ral btn-outline-primary vigo-btn hvr-shutter-out-horizontal bg-green border-transparent white focus-none">ORDER NOW</a>
+                                            <a href="https://wa.me/+254708466793/" target="_blank" class="btn ral btn-outline-primary vigo-btn hvr-shutter-out-horizontal bg-green border-transparent white focus-none">ORDER NOW</a>
                                         </div>
                                     </div>
                                 </form>
@@ -1200,7 +1238,7 @@
 
     <!-- ==============================
         Refurbished Section
-    =================================== -->
+   
     <section class="Refurbished">
         <div class="container custom-container">
             <div class="row">
@@ -1232,7 +1270,7 @@
             </div>
         </div>
     </section>
-
+ =================================== -->
     <!-- ==============================
         footer Section
     =================================== -->
@@ -1245,7 +1283,8 @@
                             About Us
                         </h4>
                         <p class="footer-content">
-                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+                            We sell, repair and deliver computers, computers' components and accessories COUNTRYWIDE. 
+                            Simply Place your order or call us via whatsapp/sms contact +254 708 466 793. Thank you.
                         </p>
                         <h6>Payment Methods</h6>
                         <div class="payment-method row">
@@ -1306,11 +1345,11 @@
                                     <a href="tel:+1234565890" class="white"><i class="fa fa-phone" aria-hidden="true"></i> +(254) 708 466 793</a>
                                 </li>
                                 <li class="list-group-item pd-0 bg-transparent border-transparent">
-                                    <a href="mailto:support@website.com" class="white"><i class="fa fa-envelope" aria-hidden="true"></i> support@website.com</a>
+                                    <a href="mailto:harounbravo2@gmail.com" class="white"><i class="fa fa-envelope" aria-hidden="true"></i> harounbravo2@gmail.com</a>
                                 </li>
                                 <li class="list-group-item pd-0 bg-transparent border-transparent d-flex align-items-start border-0">
                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                   <p class="display-inline-block mr-0">Kenyatta Avenue, opposite JKUAT TOWERS <br>Nairobi, Kenya</p>
+                                   <p class="display-inline-block mr-0"> Jamia Mall, opposite JKUAT TOWERS <br>Nairobi, Kenya</p>
                                 </li>
                             </ul>
                         </div>
@@ -1331,8 +1370,8 @@
                             <a href="https://www.facebook.com/profile.php?id=100072733456818"><i class="white fa fa-facebook" aria-hidden="true"></i></a>
                             <a href="https://twitter.com/HarounMagio"><i class="white fa fa-twitter" aria-hidden="true"></i></a>
                         </div>
-                        <p class="copyright-text white">
-                            Copyright &copy; <a href="http://themeim.com/" class="white" target="_blank"><strong>Powered</strong> by V_Tech</a>  2024. All Right Reserved
+                        <p class="copyright-text white" style="align:center">
+                            Copyright &copy; <a href="http://themeim.com/" class="white" target="_blank"><strong>Powered</strong> by V_Tech</a>  2025. All Right Reserved
                         </p>
                     </div>
                 </div>

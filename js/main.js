@@ -147,3 +147,19 @@ function rotateText() {
 }
 
 setInterval(rotateText, 2000);  
+/*
+//added for the header
+const slider = document.getElementById("main-slider");
+let position = 0; // Starting position
+
+function slide() {
+  position += 200; // Adjust according to the element width or required sliding distance
+  slider.style.transform = `translateX(${position}px)`; // Apply the transform to slide the element
+  
+  if (position >= window.innerWidth) { // Reset the position if it reaches the end of the window width
+    position = 0;
+  }
+}
+
+setInterval(slide, 3000); // Slide every 3 seconds
+*/

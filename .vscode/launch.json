@@ -1,0 +1,83 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "sample1",
+            "request": "launch",
+            "mainClass": "sample1",
+            "projectName": "website_bbcbd5ec"
+        },
+        {
+            "type": "java",
+            "name": "Numbersquare",
+            "request": "launch",
+            "mainClass": "Numbersquare",
+            "projectName": "website_bbcbd5ec"
+        },
+        {
+            "type": "java",
+            "name": "NumberSquare",
+            "request": "launch",
+            "mainClass": "NumberSquare",
+            "projectName": "website_bbcbd5ec"
+        },
+        {
+            "type": "java",
+            "name": "NumberSq",
+            "request": "launch",
+            "mainClass": "css.NumberSq",
+            "projectName": "website_bbcbd5ec"
+        },
+        {
+            "type": "java",
+            "name": "Numbersquare",
+            "request": "launch",
+            "mainClass": "css.Numbersquare",
+            "projectName": "website_bbcbd5ec"
+        },
+        {
+            "type": "java",
+            "name": "Sampler",
+            "request": "launch",
+            "mainClass": "css.Sampler",
+            "projectName": "website_bbcbd5ec"
+        },
+        {
+            "type": "java",
+            "name": "sample",
+            "request": "launch",
+            "mainClass": "sample",
+            "projectName": "website_bbcbd5ec"
+        },
+        {
+            "name": "Attach",
+            "port": 9229,
+            "request": "attach",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node"
+        },
+        {
+            "name": "Attach to Edge",
+            "port": 9222,
+            "request": "attach",
+            "type": "msedge",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Launch Edge",
+            "request": "launch",
+            "type": "msedge",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Launch Edge",
+            "request": "launch",
+            "type": "msedge",
+            "url": "http://tttt",
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}

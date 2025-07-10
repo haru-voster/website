@@ -1063,6 +1063,34 @@ footer .footer-box-border:before {
     padding-bottom: 13px !important;
   }
 }
+.description
+{
+ 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: blue; /* Make the text blue */
+    font-size: 16px;
+    visibility: hidden; /* Hidden by default */
+    opacity: 0;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7); /* Slight white overlay */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+.image-container:hover .description {
+  visibility: visible;
+  opacity: 1;
+}
+
+
 /*---------- Call To Action Section---------*/
 a.back_to_top {
     width: 40px;
@@ -2703,4 +2731,18 @@ header {
   height: 100px; /* Adjust the height as needed */
   padding: 10px; /* Optional: Add padding for spacing */
   
+}
+ .img-fluid .img
+{
+  margin: 20px;
+  border-radius: 10px;
+  width: 100%;
+  border-radius: 15px 15px 0px 0px;
+  display: flex;
+  max-width: 100%;
+  height: auto;
+}
+.vigo-pricing-table{
+
+
 }
