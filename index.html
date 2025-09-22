@@ -193,7 +193,7 @@
                                         <a class="fa fa-star " href="#process">COMPUTERS</a>
                                     </i>
                                      <i class="nav-item">
-                                        <a class="fa fa-star " href="#process">STOCK</a>
+                                        <a class="fa fa-star " href="newbrand.html">STOCK</a>
                                     </i>
                                     <i class="nav-item">
                                         <a class="fa fa-phone " href="#footer">CONTACT</a>
@@ -840,7 +840,14 @@
                             </li>
                         </ul>
                         <div class="pricing-order-now text-center">
-                            <a href="https://wa.me/+254708466793/" target="_blank" class="btn ral btn-outline-primary vigo-btn hvr-shutter-out-horizontal bg-green border-transparent white focus-none">ORDER NOW</a>
+                <a href="javascript:void(0)"
+                    onclick="sendOrder('DESKTOP & MONITOR',
+                    'Dell OptiPlex 7040 Core i5-6500 8GB RAM 500GB HDD ROM 19” Dell Monitor',
+                    'Ksh.24,999.00')"
+                    class="btn ral btn-outline-primary vigo-btn hvr-shutter-out-horizontal bg-green border-transparent white focus-none">
+                    ORDER NOW
+                </a>
+
                         </div>
                     </div>
                 </div>
@@ -1410,4 +1417,16 @@
 
 
   </body>
+  <script>
+function sendOrder(product, description, price, imageUrl) {
+    let phone = "254708466793"; // recipient
+    let message = `Hello, Rue Store, I would like to order:\n\n` +
+                  `*${product}*\n` +
+                  `Description: ${description}\n` +
+                  `Price: ${price}`;
+    let url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+    window.open(url, "_blank");
+}
+</script>
+
 </html>

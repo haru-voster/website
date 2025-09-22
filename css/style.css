@@ -1,56 +1,12 @@
-/*------------------------------------------------------------------
-
- *
- * Author      : Wditsolution
- * Project     : Vigo Landing Page
- * Version     : 1.0.0
- * Description : Just a simple starter template to jump start your development.
- * Primary use : Starter Template
- * Last update : YYYY/MM/DD
- * Develop     : Badhon Khan
- *
- * -----------------------------------------------------------------*
- *                         TABLE OF CONTENTS                        *
- * -----------------------------------------------------------------*
- *
- * 01. Base Styles
- * 02. Header
- * 03. Navigation
- * 04. Footer Styles
- * 05. vigo-slider
- * 06. call-to-action
- * 07. features
- * 08. services
- * 09. about
- * 10. product-features
- * 11. recommended
- * 12. newsletter
- * 13. gallery
- * 14. pricing-table
- * 15. process
- * 16. ingredients
- * 17. testimonial
- * 18. product
- * 19. certification
- * 05. Responsive Styles
- *
-
- * -----------------------------------------------------------------*
- *                        Color Codes                               *
- * -----------------------------------------------------------------*
-
- * $white: #fff;
- * $green: #e5504b;
- * $black: #333740;
- * $light-gray: #f1f1f1;
-
- * -----------------------------------------------------------------*
+/* * -----------------------------------------------------------------*
  *                        Font Family                               *
  * -----------------------------------------------------------------*
  *$ral: 'Raleway', sans-serif;
  *$lato: 'Lato', sans-serif;
  *$cou: 'Courgette', cursive;
--------------------------------------------------------------------*/
+-------------------------------------------------------------------*/ */
+
+ 
 /*------------------------------------------
 	Google Font
 --------------------------------------------*/
@@ -2745,4 +2701,40 @@ header {
 .vigo-pricing-table{
 
 
+}
+
+/* added scripts */
+/* Ensure gallery items align nicely */
+.gallery-img-box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Make images responsive & uniform */
+.gallery-img {
+    width: 100%;
+    height: 250px;   /* fix uniform height */
+    object-fit: cover;  /* crop image nicely without distortion */
+    display: block;
+}
+
+/* Center text below images */
+.gallery-content-box {
+    padding: 10px 5px;
+}
+
+/* Responsive priorities: ensure consistent row gaps */
+.mixitup.row {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.mixitup .col-12,
+.mixitup .col-sm-12,
+.mixitup .col-md-6,
+.mixitup .col-lg-4,
+.mixitup .col-xl-4 {
+    padding: 10px;
 }
